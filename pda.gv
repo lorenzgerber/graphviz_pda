@@ -1,0 +1,21 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	size="8,5"
+	node [shape = doublecircle]; 7;
+	node [shape = circle];
+	start -> 1 [ label = "e,e $" ];
+	1 -> 1 [ label = "B,e e" ];
+	1 -> 2 [ label = "N,e I" ];
+	2 -> 2 [ label = "N,e I" ];
+	2 -> 3 [ label = "B,e I" ];
+	2 -> 4 [ label = "O,e e" ];
+	2 -> 6 [ label = "T,N e" ];
+	3 -> 4 [ label = "O,B e" ];
+	3 -> 3 [ label = "B,e e" ];
+	3 -> 2 [ label = "N,e I" ];
+	4 -> 4 [ label = "e,N e" ];
+	3 -> 6 [ label = "T,B e" ];
+	5 -> 3 [ label = "e,e B" ];
+	4 -> 5 [ label = "e,B e" ];
+	6 -> 6 [ label = "e,N e" ];
+	6 -> 7 [ label = "e,$ e" ];}
